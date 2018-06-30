@@ -11,6 +11,11 @@
   <name>nnnn1</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+  <scm>
+  <connection>scm:git:https://github.com/Narendra955/nnnn.git</connection>
+  <developerconnection>scm:git:https://github.com/Narendra955/nnnn.git</developerconnection>
+  <url>https://github.com/Narendra955/nnnn.git</url>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,6 +31,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>pc-releases</name>
+        <url>http://localhost:8081/artifactory/nnnn1</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>pc-snapshots</name>
+        <url>http://localhost:8081/artifactory/nnnn1</url>
+    </snapshotRepository>
+</distributionManagement
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
